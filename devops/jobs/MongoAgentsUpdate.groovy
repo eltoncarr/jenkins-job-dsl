@@ -1,7 +1,7 @@
 package devops.jobs
 import static org.edx.jenkins.dsl.Constants.common_logrotator
 
-class MongoAgentsUpdateCheck {
+class MongoAgentsUpdate {
     public static def job = {
         dslFactory, extraVars ->
         dslFactory.job("Monitoring" + "/mongo-agents-update") {

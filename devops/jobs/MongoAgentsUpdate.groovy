@@ -77,5 +77,6 @@ class MongoAgentsUpdate {
                 mailer(extraVars.get('NOTIFY_ON_FAILURE'), false, false)
 
             }
-     }
+        }
+    }
 }

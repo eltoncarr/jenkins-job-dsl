@@ -13,7 +13,7 @@ class MongoAgentsUpdate {
                     'Git repo containing internal overrides')
                 stringParam('CONFIGURATION_INTERNAL_BRANCH', extraVars.get('CONFIGURATION_INTERNAL_BRANCH', 'master'),
                     'e.g. tagname or origin/branchname')
-                stringParam('CONFIGURATION_SECURE_REPO', extraVars.get('CONFIGURATION_SECURE_REPO',"git@github.com:edx-ops/${deployment}-secure.git"),
+                stringParam('CONFIGURATION_SECURE_REPO', extraVars.get('CONFIGURATION_SECURE_REPO',"git@github.com:edx-ops/edx-secure.git"),
                     'Secure Git repo .')
                 stringParam('CONFIGURATION_SECURE_BRANCH', extraVars.get('CONFIGURATION_SECURE_BRANCH', 'master'),
                     'e.g. tagname or origin/branchname')

@@ -6,6 +6,7 @@ class MongoAgentsUpdate {
         dslFactory, extraVars ->
         dslFactory.job("Monitoring" + "/mongo-agents-update") {
             logRotator common_logrotator
+            def gitCredentialId = extraVars.get('SECURE_GIT_CREDENTIALS','')
             parameters {
                 stringParam('CONFIGURATION_REPO', 'https://github.com/edx/configuration.git')
                 stringParam('CONFIGURATION_BRANCH', 'master')

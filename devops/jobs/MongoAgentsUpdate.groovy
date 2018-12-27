@@ -58,7 +58,7 @@ class MongoAgentsUpdate {
                     extensions {
                         cleanAfterCheckout()
                         pruneBranches()
-                        relativeTargetDirectory('configuration-internal')
+                        relativeTargetDirectory('configuration-secure')
                     }
                 }
             }
